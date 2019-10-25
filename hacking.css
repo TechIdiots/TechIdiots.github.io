@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #007bff!important;
+}
+.navbar-brand img{
+  height: 40px;
+  padding-left: 30px;
+}
+.navbar-nav li{
+  padding: 0 10px;
+}
+.navbar-nav li a{
+  float: right;
+  text-align: left;
+}
+#nav-bar ul li a:hover{
+  color: #007bff! important;
+}
+.navbar{
+  background: #fff;
+}
+.navbar-toggler{
+  border: none! important;
+}
+.nav-link{
+  color: #555! important;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-link{
+  text-transform: uppercase;
+}
+.wrapper{
+  width: 1170px;
+  margin: auto;
+}
+#promo{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("images/200.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding: 100px;
+  font-family: sans-serif;
+  font-size: 38px;
+}
+a{
+  text-decoration: none!important;
+}
+.welcome-tex{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 20% 30%;
+  text-align: center;
+}
+.welcome-tex h1{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+.welcome-tex a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: -74px;
+  display: inline-block;
+  color: #fff;
+}
+.welcome-tex a:hover{
+  background: #fff;
+  color: #333;
+}
+#sam-con{
+  padding: 50px;
+  color: #555;
+}
+#sam-con h2{
+  color: #555;
+  font-size: 42px;
+  padding-bottom: 30px;
+}
+#steps{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("images/100.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+#steps p{
+  padding-bottom: 10px;
+}
+#steps img{
+  padding-bottom: 10px;
+}
+#steps h2{
+  color: #fff;
+  font-size: 42px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#vid-emb{
+  padding: 20px;
+  text-align: center;
+}
+#footer{
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+}
+#footer a{
+  text-decoration: none;
+  color: #fff!important;
+}
+:fa-heart-o{
+  margin: 3px;
+  color: red;
+}
