@@ -130,3 +130,7 @@ a{
   margin: 3px;
   color: red;
 }
+#next{
+  text-align: right;
+  padding: 50px;
+}
