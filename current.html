@@ -72,26 +72,6 @@
 				'<b style="width : relative;">your current location</b>',
 				{minWidth : 256}
 			);
-			const myCustomColour = '#583470'
-			const markerHtmlStyles = `
-			  background-color: ${myCustomColour};
-			  width: 3rem;
-			  height: 3rem;
-			  display: block;
-			  left: -1.5rem;
-			  top: -1.5rem;
-			  position: relative;
-			  border-radius: 3rem 3rem 0;
-			  transform: rotate(45deg);
-			  border: 1px solid #FFFFFF`
-
-			const icon = L.divIcon({
-			  className: "my-custom-pin",
-			  iconAnchor: [0, 24],
-			  labelAnchor: [-6, 0],
-			  popupAnchor: [0, -36],
-			  html: `<span style="${markerHtmlStyles}" />`
-			})
 			var choice = document.getElementById("doj").value;
 			if (choice == 'male') {
 				var points = [10.952178,78.7495383];
