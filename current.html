@@ -3,14 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+    <script src="lib/leaflet/leaflet.js"></script>
   </head>
   <body>
-    <script type="text/javascript">
+    <div id="map"></div>
+		<script>
+
       navigator.geolocation.getCurrentPosition(function(position){
         document.write("latitude="+position.coords.latitude);
         document.write(" longitude="+position.coords.longitude);
-      } )
-
-    </script>
+        var point = [position.coords.latitude, position.coords.longitude];
+        var myMarker = L.marker(point);
+        myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Anna University BIT campus</b><div><img style="width:100%" src="https://techidiots.github.io/sim.jpg" alt="image" /></div>',
+				{minWidth : 256}
+			);
+      var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 1);
+			var countriesLayer = L.geoJson(
+				samp,
+				{style : countriesStyle}
+			).addTo(map);
+		</script>
   </body>
 </html>
