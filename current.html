@@ -15,6 +15,7 @@
         document.write(" longitude="+position.coords.longitude);
         var point = [position.coords.latitude, position.coords.longitude];
         var myMarker = L.marker(point);
+
         myMarker.addTo(map);
 			myMarker.bindPopup(
 				'<b>Anna University BIT campus</b><div><img style="width:100%" src="https://techidiots.github.io/sim.jpg" alt="image" /></div>',
@@ -25,6 +26,8 @@
 				samp,
 				{style : countriesStyle}
 			).addTo(map);
+      });
+
 		</script>
   </body>
 </html>
