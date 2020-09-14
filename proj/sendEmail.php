@@ -18,13 +18,13 @@ if(isset($_POST['submit'])){
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'yourGmail address'; 
-    $mail->Password = 'ypurGmail password'; 
+    $mail->Username = 'yuvarajamaniraj@gmail.com'; 
+    $mail->Password = 'lightoppdark'; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = '587';
 
-    $mail->setFrom('yaruku mail la irrundhu mail anupura'); 
-    $mail->addAddress('yaruku mail panra'); 
+    $mail->setFrom('yuvarajamaniraj@gmail.com'); 
+    $mail->addAddress('yuvarajamaniraj@gmail.com'); 
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
